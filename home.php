@@ -19,11 +19,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
+    
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -110,7 +113,7 @@
 
 
     <!-- Banner Start -->
-    <div class="container-fluid banner mb-5">
+    <!-- <div class="container-fluid banner mb-5">
         <div class="container">
             <div class="row gx-0">
                 <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
@@ -156,7 +159,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Banner Start -->
 
 
@@ -259,161 +262,91 @@
 
 
     <!-- Service Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-5 mb-5">
-                <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px;">
-                    <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="img/before.jpg" style="object-fit: cover;">
-                        <img class="position-absolute w-100 h-100" src="img/after.jpg" style="object-fit: cover;">
-                    </div>
-                </div>   
-                <div class="col-lg-7"> 
-                    <div class="section-title mb-5">
-                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Services</h5>
-                        <h1 class="display-5 mb-0">We Offer The Best Quality Dental Services</h1>
-                    </div>
-                    <div class="row g-5">
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-1.jpg" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Cosmetic Dentistry</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-2.jpg" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Dental Implants</h5>
-                            </div>
-                        </div>
-                    </div>
+    <div class="container py-5">
+        <h1 class="text-center mb-5">Our Facilities</h1>
+        
+        <!-- Facility Grid -->
+        <div class="row" id="facilityGrid">
+            <div class="col-md-4 mb-4">
+                <div class="facility" data-index="1">
+                    <img src="https://via.placeholder.com/100" alt="Facility 1">
+                    <div class="facility-title">Infant & Toddler</div>
                 </div>
             </div>
-            <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-7">
-                    <div class="row g-5">
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.3s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-3.jpg" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Dental Bridges</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-4.jpg" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Teeth Whitening</h5>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-md-4 mb-4">
+                <div class="facility" data-index="2">
+                    <img src="https://via.placeholder.com/100" alt="Facility 2">
+                    <div class="facility-title">Anxiety-Free Treatment</div>
                 </div>
-                <div class="col-lg-5 service-item wow zoomIn" data-wow-delay="0.9s">
-                    <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
-                        <h3 class="text-white mb-3">Make Appointment</h3>
-                        <p class="text-white mb-3">Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est magna stet eirmod</p>
-                        <h2 class="text-white mb-0">+012 345 6789</h2>
-                    </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="facility" data-index="3">
+                    <img src="https://via.placeholder.com/100" alt="Facility 3">
+                    <div class="facility-title">Preventive Dentistry</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="facility" data-index="4">
+                    <img src="https://via.placeholder.com/100" alt="Facility 4">
+                    <div class="facility-title">Orthodontics</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="facility" data-index="5">
+                    <img src="https://via.placeholder.com/100" alt="Facility 5">
+                    <div class="facility-title">General Anesthesia</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="facility" data-index="6">
+                    <img src="https://via.placeholder.com/100" alt="Facility 6">
+                    <div class="facility-title">Sleep Dentistry</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="facility" data-index="7">
+                    <img src="https://via.placeholder.com/100" alt="Facility 7">
+                    <div class="facility-title">Special Needs</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="facility" data-index="8">
+                    <img src="https://via.placeholder.com/100" alt="Facility 8">
+                    <div class="facility-title">Disabilities</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="facility" data-index="9">
+                    <img src="https://via.placeholder.com/100" alt="Facility 9">
+                    <div class="facility-title">Advanced Care</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Facility Grid Overlay -->
+        <div class="facility-grid-overlay" id="facilityGridOverlay"></div>
+
+        <!-- Description Section -->
+        <div class="description-section" id="descriptionSection">
+            <div class="description-container">
+                <div>
+                    <img src="" alt="Facility Image" id="descriptionImage">
+                </div>
+                <div class="description-content">
+                    <h3 id="descriptionTitle"></h3>
+                    <p id="descriptionText"></p>
+                    <button class="close-button" id="closeButton">Close</button>
                 </div>
             </div>
         </div>
     </div>
+
+
+    
     <!-- Service End -->
 
 
-    <!-- Offer Start -->
-    <div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="offer-text text-center rounded p-5">
-                        <h1 class="display-5 text-white">Save 30% On Your First Dental Checkup</h1>
-                        <p class="text-white mb-4">Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et dolore et at sea ea at dolor justo ipsum duo rebum sea. Eos vero eos vero ea et dolore eirmod diam duo lorem magna sit dolore sed et.</p>
-                        <a href="appointment.html" class="btn btn-dark py-3 px-5 me-3">Appointment</a>
-                        <a href="" class="btn btn-light py-3 px-5">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Offer End -->
 
-
-    <!-- Pricing Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-5">
-                    <div class="section-title mb-4">
-                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Pricing Plan</h5>
-                        <h1 class="display-5 mb-0">We Offer Fair Prices for Dental Treatment</h1>
-                    </div>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo eirmod magna dolore erat amet</p>
-                    <h5 class="text-uppercase text-primary wow fadeInUp" data-wow-delay="0.3s">Call for Appointment</h5>
-                    <h1 class="wow fadeInUp" data-wow-delay="0.6s">+012 345 6789</h1>
-                </div>
-                <div class="col-lg-7">
-                    <div class="owl-carousel price-carousel wow zoomIn" data-wow-delay="0.9s">
-                        <div class="price-item pb-4">
-                            <div class="position-relative">
-                                <img class="img-fluid rounded-top" src="img/price-1.jpg" alt="">
-                                <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle" style="z-index: 2;">
-                                    <h2 class="text-primary m-0">$35</h2>
-                                </div>
-                            </div>
-                            <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
-                                <h4>Teeth Whitening</h4>
-                                <hr class="text-primary w-50 mx-auto mt-0">
-                                <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Professional Dentist</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-2"><span>24/7 Call Support</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <a href="appointment.html" class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Appointment</a>
-                            </div>
-                        </div>
-                        <div class="price-item pb-4">
-                            <div class="position-relative">
-                                <img class="img-fluid rounded-top" src="img/price-2.jpg" alt="">
-                                <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle" style="z-index: 2;">
-                                    <h2 class="text-primary m-0">$49</h2>
-                                </div>
-                            </div>
-                            <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
-                                <h4>Dental Implant</h4>
-                                <hr class="text-primary w-50 mx-auto mt-0">
-                                <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Professional Dentist</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-2"><span>24/7 Call Support</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <a href="appointment.html" class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Appointment</a>
-                            </div>
-                        </div>
-                        <div class="price-item pb-4">
-                            <div class="position-relative">
-                                <img class="img-fluid rounded-top" src="img/price-3.jpg" alt="">
-                                <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle" style="z-index: 2;">
-                                    <h2 class="text-primary m-0">$99</h2>
-                                </div>
-                            </div>
-                            <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
-                                <h4>Root Canal</h4>
-                                <hr class="text-primary w-50 mx-auto mt-0">
-                                <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Professional Dentist</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-2"><span>24/7 Call Support</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <a href="appointment.html" class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Appointment</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Pricing End -->
 
 
     <!-- Testimonial Start -->
@@ -542,23 +475,146 @@
         </div>
     </div>
     <!-- Team End -->
+<br><br><br>
+<!-- <br><br><br> -->
+<!-- <br><br><br> -->
 
 
-    <!-- Newsletter Start -->
-    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
-        <div class="container">
-            <div class="bg-primary p-5">
-                <form class="mx-auto" style="max-width: 600px;">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                        <button class="btn btn-dark px-4">Sign Up</button>
+    <!-- Start Testimonials
+		<section class="section testimonials overlay" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							
+							<h2>What Our Customers Say</h2>
+							<p style="color:white; font-size: large;">Our customers are our greatest asset. Here's what they have to say about us!</p>
+							<img src="img/section-img.png" alt="#">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-12">
+						<div class="owl-carousel testimonial-slider">
+							Start Single Testimonial
+							<div class="single-testimonial">
+								<img src="img/testimonial-1.png" alt="#">
+								<p class="pt">The groundnut cold pressed oil is really good, have been using since 2 years now. Will surely recommend it to others as well.</p>
+								<h4 class="name">Ajinkya Bhalerao</h4>
+								<div class="stars">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning "></i>
+                        <i class="bi bi-star-fill text-warning "></i>
+                        <i class="bi bi-star-fill text-warning"></i>
                     </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- Newsletter End -->
-    
+							</div>
+							End Single Testimonial
+							Start Single Testimonial
+							<div class="single-testimonial">
+								<img src="img/testimonial-4.png" alt="#">
+								<p class="pt">I have been using their groundnut and sesame cold press oil since 2 years. There's 100% product quality assurance since the oil extraction process is done right in front of us when we place the order. Recommended place for buying cold press oil!</p>
+								<h4 class="name">Shivam More</h4>
+								<div class="stars">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning "></i>
+                        <i class="bi bi-star-fill text-warning "></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+							</div>
+							End Single Testimonial
+							Start Single Testimonial
+							<div class="single-testimonial">
+								<img src="img/testimonial-10.png" alt="#">
+								<p class="pt">Very nice wood pressed oils. I always purchase oils from Sanjivani Organics. Quality, service is best. Prices are comparatively reasonable.</p>
+								<h4 class="name">Ashok Kamble</h4>
+								<div class="stars">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning "></i>
+                        <i class="bi bi-star-fill text-warning "></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                    </div>
+							</div>
+							End Single Testimonial
+							Start Single Testimonial
+							<div class="single-testimonial">
+								<img src="img/testimonial-9.png" alt="#">
+								<p class="pt">I had ordered Sanjivani Organic Cooking Oil. I am impressed with the quality of it. I would suggest everyone reading this, to once order the oils from here! Must Try!</p>
+								<h4 class="name">MRUNAL R</h4>
+								<div class="stars">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning "></i>
+                        <i class="bi bi-star-fill text-warning "></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+							</div>
+							End Single Testimonial
+							Start Single Testimonial
+							<div class="single-testimonial">
+								<img src="img/testimonial-5.png" alt="#">
+								<p class="pt" >The quality is really good. Value for money products. Been a customer for 2 years.</p>
+								<h4 class="name">Ankit Kshirsagar</h4>
+								<div class="stars">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning "></i>
+                        <i class="bi bi-star-fill text-warning "></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+							</div>
+							End Single Testimonial
+							Start Single Testimonial
+							<div class="single-testimonial">
+								<img src="img/testimonial-8.png" alt="#">
+								<p class="pt" >I have been using SANJIVANI ORGANIC groundnut oil, sesame oil and coconut oil since a long time and have observed lot of health benefits. The quality of oil is very good and the staff is quite helpful.</p>
+								<h4 class="name">Aishwarya Baile</h4>
+								<div class="stars">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning "></i>
+                        <i class="bi bi-star-fill text-warning "></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+							</div>
+							End Single Testimonial
+							Start Single Testimonial
+							<div class="single-testimonial">
+								<img src="img/testimonial-6.png" alt="#">
+								<p class="pt">Im using cold pressed oil from last 3 years
+								!!!! Great experience with sanjeevani lakdi ghana oil !! Highly recommended. Even they do free home delivery!</p>
+								<h4 class="name">Deep Nik</h4>
+								<div class="stars">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning "></i>
+                        <i class="bi bi-star-fill text-warning "></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+							</div>
+							End Single Testimonial
+							Start Single Testimonial
+							<div class="single-testimonial">
+								<img src="img/testimonial-7.png" alt="#">
+								<p class="p">This shop genuinely sells good products . Have been buying cold press food oil since a year now and can surely say they sell all genuine product with reasonable rates</p>
+								<h4 class="name">Rasika Mohite</h4>
+								<div class="stars">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning "></i>
+                        <i class="bi bi-star-fill text-warning "></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+							</div>
+							End Single Testimonial
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<!--/ End Testimonials -->
 
     
 

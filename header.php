@@ -35,6 +35,11 @@
     <!-- Bootstrap Icons CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        
+       
+
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -166,6 +171,46 @@
             color: white; /* Set color */
         }
 
+
+        .navbar-toggler .fas {
+    color: white; /* Ensures the menu icon stays white */
+    font-size: 1.5rem; /* Adjust icon size */
+}
+
+.btn-close-white {
+    position: absolute;
+    right: 15px; /* Align the close button to the right */
+    top: 10px; /* Adjust for better alignment */
+}
+
+.navbar-toggler .fas {
+    color: white; /* Ensures the menu icon stays white */
+    font-size: 1.5rem; /* Adjust icon size */
+}
+
+.collapse .nav-link {
+    font-size: 16px;
+    text-align: center; /* Centers links in mobile view */
+    padding: 10px 0; /* Adds space between links */
+}
+
+.collapse .btn-close-white {
+    position: absolute;
+    top: 10px; /* Align the close button to the top */
+    right: 15px; /* Align to the right */
+    z-index: 1;
+}
+
+.collapse .social-icons a {
+    font-size: 18px;
+    margin-right: 15px; /* Add space between social icons */
+}
+
+.collapse .navbar-nav {
+    margin-top: 20px; /* Adds space at the top of the menu in mobile view */
+}
+
+
     </style>
 
 </head>
@@ -186,14 +231,14 @@
                     <div class="row">
                         <!-- Phone and Email -->
                         <div class="col-md-6">
-                            <p><span class="icon">📞</span> +91 99307 39508</p>
+                            <p><span class="icon">📞</span> +91 95030 79151</p>
                             <p><span class="icon">📞</span> +91-22-26348490</p>
                             <p><span class="icon">✉️</span> happytoothclinic@gmail.com</p>
                         </div>
-
+  
                         <!-- Address -->
                         <div class="col-md-6">
-                            <p><span class="icon">📍</span> 308, Aston. Above Mercedes-Benz showroom Sundervan Complex, Shastri Nagar. Andheri West Mumbai - 400053 India</p>
+                            <p><span class="icon">📍</span> OFFICE NO 19, FIRST FLOOR, Kumar Pavilion, East St, near Victory Cinema, Hulshur, Pune Cantonment, Pune-411001, Maharashtra, India. </p>
                         </div>
                     </div>
                     </div>
@@ -202,97 +247,59 @@
         </div>
     </header>
     <!-- top header end -->
-<!-- navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container-fluid">
-            <!-- Left: Menu -->
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+        <!-- Navbar Toggler for Mobile -->
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color: white;">
+                <i class="fas fa-bars"></i>
+            </span>
+        </button>
+
+        <!-- Collapsible Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <!-- Close Button -->
+            <button class="btn-close btn-close-white ms-auto d-lg-none" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-label="Close"></button>
+
+            <!-- Menu Links -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+                <li class="nav-item mb-2"> <!-- Added margin for spacing -->
                     <a class="nav-link" href="#">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mb-2"> <!-- Added margin for spacing -->
                     <a class="nav-link" href="#">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mb-2"> <!-- Added margin for spacing -->
                     <a class="nav-link" href="#">Services</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mb-2"> <!-- Added margin for spacing -->
                     <a class="nav-link" href="#">Gallery</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mb-2"> <!-- Added margin for spacing -->
                     <a class="nav-link" href="#">Testimonials</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mb-2"> <!-- Added margin for spacing -->
                     <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
 
-            <!-- Right: Social Media Icons -->
-            <div class="social-icons">
-                <a href="#" target="_blank" class="wheelchair"><i class="fa fa-wheelchair"></i></a>
-                <!-- <a href="#" target="_blank" class="wheelchair"><i class="bi bi-wheelchair"></i></a> --> 
-                <a href="#" target="_blank"><i class="bi bi-telephone"></i></a>
-                <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
-                <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
-                <!-- <a href="#" target="_blank"><i class="bi bi-twitter"></i></a> -->
-                <!-- <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a> -->
-            </div>
-        </div>
-    </nav>
-    <!-- navbar end  -->
-    
-    <!-- Topbar Start -->
-    <!-- <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center">
-                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
-                </div>
-            </div>
-            <div class="col-md-6 text-center text-lg-end">
-                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
-                    <div class="me-3 pe-3 border-end py-2">
-                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>info@example.com</p>
-                    </div>
-                    <div class="py-2">
-                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
-                    </div>
-                </div>
+            <!-- Social Media Icons -->
+            <div class="social-icons d-flex justify-content-center mt-3"> <!-- Added margin-top -->
+                <a href="#" target="_blank" class="me-3"><i class="fa fa-wheelchair"></i></a>
+                <a href="#" target="_blank" class="me-3"><i class="bi bi-telephone"></i></a>
+                <a href="#" target="_blank" class="me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" target="_blank" class="me-3"><i class="bi bi-instagram"></i></a>
             </div>
         </div>
     </div>
-    <!-- Topbar End 
-        
-<!-- 
-    <!-- Navbar Start -
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">  
-        <!-- <a href="index.html" class="navbar-brand p-0">  
-       <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>DentCare</h1>
-     </a>  
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"> 
-            <span class="navbar-toggler-icon"></span> 
-        </button>  
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="price.html" class="dropdown-item">Pricing Plan</a>
-                        <a href="team.html" class="dropdown-item">Our Dentist</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="appointment.html" class="dropdown-item">Appointment</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
-            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
-        </div>
-    </nav>  -->
-    <!-- Navbar End -->
+</nav>
+<!-- Navbar End -->
+
+
+    
      
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

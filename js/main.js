@@ -119,3 +119,50 @@
     
 })(jQuery);
 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const facilities = document.querySelectorAll(".facility");
+    const facilityGridOverlay = document.getElementById("facilityGridOverlay");
+    const descriptionSection = document.getElementById("descriptionSection");
+    const descriptionImage = document.getElementById("descriptionImage");
+    const descriptionTitle = document.getElementById("descriptionTitle");
+    const descriptionText = document.getElementById("descriptionText");
+    const closeButton = document.getElementById("closeButton");
+
+    // Facility data
+    const facilityData = {
+        1: { title: "Infant & Toddler", text: "Gentle care for infants and toddlers.", image: "https://via.placeholder.com/600" },
+        2: { title: "Anxiety-Free Treatment", text: "Stress-free dental care.", image: "https://via.placeholder.com/600" },
+        3: { title: "Preventive Dentistry", text: "Protect your oral health.", image: "https://via.placeholder.com/600" },
+        4: { title: "Orthodontics", text: "Aligned and beautiful smiles.", image: "https://via.placeholder.com/600" },
+        5: { title: "General Anesthesia", text: "Comfortable and safe procedures.", image: "https://via.placeholder.com/600" },
+        6: { title: "Sleep Dentistry", text: "Sleep through your dental care.", image: "https://via.placeholder.com/600" },
+        7: { title: "Special Needs", text: "Tailored care for everyone.", image: "https://via.placeholder.com/600" },
+        8: { title: "Disabilities", text: "Accessible and gentle dentistry.", image: "https://via.placeholder.com/600" },
+        9: { title: "Advanced Care", text: "State-of-the-art treatments.", image: "https://via.placeholder.com/600" },
+    };
+
+    facilities.forEach(facility => {
+        facility.addEventListener("click", function () {
+            const index = this.getAttribute("data-index");
+            const data = facilityData[index];
+
+            // Update description content
+            descriptionImage.src = data.image;
+            descriptionTitle.textContent = data.title;
+            descriptionText.textContent = data.text;
+
+            // Show overlay and description section
+            facilityGridOverlay.style.display = "block";
+            descriptionSection.style.display = "flex";
+        });
+    });
+
+    // Close button functionality
+    closeButton.addEventListener("click", function () {
+        facilityGridOverlay.style.display = "none";
+        descriptionSection.style.display = "none";
+    });
+});
+
