@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <title>Scrollable Testimonials</title> -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+
+.testimonials-section {
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.testimonial-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 15px;
+  padding: 10px;
+}
+
+.testimonial-carousel::-webkit-scrollbar {
+  height: 10px;
+}
+
+.testimonial-carousel::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.testimonial-card {
+  flex: 0 0 300px; /* Width of each card */
+  background: #f9f9f9;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reviewer-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.testimonial-content {
+  text-align: center;
+}
+
+.review-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+.reviewer-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+.review-stars span {
+  font-size: 1rem;
+  color: #f4c150; /* Gold color for stars */
+}
+
+  </style>
+</head>
+<body>
+  <div class="testimonials-section">
+    <h2 class="section-title">What Our Patients Say</h2>
+    <div class="testimonial-carousel">
+      <div class="testimonial-card">
+        <img src="http://localhost/kidswp/wp-content/uploads/2024/12/1.png" alt="Reviewer Photo" class="reviewer-photo">
+        <div class="testimonial-content">
+          <p class="review-text">
+            "Dr. Abhinav is an exceptional child dentist, making every visit a positive experience, With a warm, friendly approach. My daughter was instantly relieved from her tooth pain. Dr. Abhinav's expertise and gentle care make an excellent choice for parents seeking a trustworthy dentist for their kids. Highly recommended!"
+          </p>
+          <h3 class="reviewer-name">Faiz Ahmed Syed Shah</h3>
+          <div class="review-stars">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat similar testimonial-card elements for more reviews -->
+      <div class="testimonial-card">
+        <img src="http://localhost/kidswp/wp-content/uploads/2024/12/2.png" alt="Reviewer Photo" class="reviewer-photo">
+        <div class="testimonial-content">
+          <p class="review-text">
+            "Dr. Abhinav is an exceptional child dentist, making every visit a positive experience, With a warm, friendly approach. My daughter was instantly relieved from her tooth pain.Dr. Abhinav's expertise and gentle care make an excellent choice for parents seeking a trustworthy dentist for their kids. Highly recommended!"
+          </p>
+          <h3 class="reviewer-name">Manjur Tamboli</h3>
+          <div class="review-stars">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <img src="http://localhost/kidswp/wp-content/uploads/2024/12/3.png" alt="Reviewer Photo" class="reviewer-photo">
+        <div class="testimonial-content">
+          <p class="review-text">
+            "When I brought my daughter to the Dr. Talekar's clinic, her teeth were in very bad condition. I was very tense about how the treatment would be done. He is friendly with my daughter throughout the root canal process. I'm happy with the treatment done by Dr. Talekar for my daughter. He is very soft spoken and explain the treatment process very nicely and clamly. The staff is also very nice. Thank you so much Dr. Talekar."
+          </p>
+          <h3 class="reviewer-name">Sapna Tiwari</h3>
+          <div class="review-stars">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <img src="http://localhost/kidswp/wp-content/uploads/2024/12/4.png" alt="Reviewer Photo" class="reviewer-photo">
+        <div class="testimonial-content">
+          <p class="review-text">
+            "I visited dr.Abhinav Talekar children's Dental care for my son  double teeth.They explain me very well. And i was ready for my son treatment quickly.My son was very comfortable & happy during the procedure. Staff was very helpful.& most important I went there for the first time by doing a google search. This is the very clean & best place. 👍🏻"
+          </p>
+          <h3 class="reviewer-name">Akash Pawar</h3>
+          <div class="review-stars">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+        </div>
+      </div>    
+      <div class="testimonial-card">
+        <img src="http://localhost/kidswp/wp-content/uploads/2024/12/9.png" alt="Reviewer Photo" class="reviewer-photo">
+        <div class="testimonial-content">
+          <p class="review-text">
+            "Dr. Talekar is a very skilled and soft spoken doctor, he handles the children very efficiently when it comes to their tantrums for the treatment. My daughter had a root canal done from Dr talekar four years back and there is no problem with that specific tooth till date! My kids have been having a lot of tooth caries and he have been a very efficient pediatric dentist for them!"
+          </p>
+          <h3 class="reviewer-name">Humera Khan</h3>
+          <div class="review-stars">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <img src="http://localhost/kidswp/wp-content/uploads/2024/12/5.png" alt="Reviewer Photo" class="reviewer-photo">
+        <div class="testimonial-content">
+          <p class="review-text">
+            "Very happy with the service. Dr. Talekar is a friendly warm welcoming presence. Always treating with a smile. Completely non judgmental, and willing to listen to your case however strange or bad."
+          </p>
+          <h3 class="reviewer-name">Mark Jacob</h3>
+          <div class="review-stars">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <img src="http://localhost/kidswp/wp-content/uploads/2024/12/6.png" alt="Reviewer Photo" class="reviewer-photo">
+        <div class="testimonial-content">
+          <p class="review-text">
+            "Recently treated my 3yr old son for teeth cavities. It was a good experience. All my doubts were cleared properly. Thanks to Dr  Abhinav and his team. I recommend him as your family dentist."
+          </p>
+          <h3 class="reviewer-name">CA Ab Samad</h3>
+          <div class="review-stars">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <img src="http://localhost/kidswp/wp-content/uploads/2024/12/7.png" alt="Reviewer Photo" class="reviewer-photo">
+        <div class="testimonial-content">
+          <p class="review-text">
+            "Very satisfied with the treatment taken for my kid. Dr. Abhinav is very good at his work they know how tackle with kids and get the treatment done."
+          </p>
+          <h3 class="reviewer-name">Vaibhav Giram</h3>
+          <div class="review-stars">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <img src="http://localhost/kidswp/wp-content/uploads/2024/12/3.png" alt="Reviewer Photo" class="reviewer-photo">
+        <div class="testimonial-content">
+          <p class="review-text">
+            "I have been to Dr Talekar's clinic multiple times for treatment and I have always been satisfied with the treatment. Dr Talekar himself is such a skilled dentist, he treats you with minimum amount of pain and the helping staff is nice and helpful as well. One of the best dentist clinic in Pune."
+          </p>
+          <h3 class="reviewer-name">Nikhil Chaudhari</h3>
+          <div class="review-stars">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+        </div>
+      </div>
+      <!-- Add 6 more testimonial cards -->
+    </div>
+  </div>
+
+  <script>
+  const carousel = document.querySelector('.testimonial-carousel');
+
+  setInterval(() => {
+    carousel.scrollBy({
+      left: 300, // Width of one card
+      behavior: 'smooth'
+    });
+
+    // Reset scroll position when reaching the end
+    if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth) {
+      carousel.scrollTo({ left: 0, behavior: 'smooth' });
+    }
+  }, 3000); // Adjust the interval as needed
+</script>
+
+  
+</body>
+</html>

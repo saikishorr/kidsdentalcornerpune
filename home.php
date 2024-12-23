@@ -69,6 +69,37 @@
     </div>
     <!-- Full Screen Search End -->
 
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/carousel-1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img/carousel-1.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/carousel-1.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0">
@@ -111,6 +142,37 @@
     </div>
     <!-- Carousel End -->
 
+    <div class="about-us-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Section -->
+                <div class="col-md-6 about-us-text">
+                    <h2>Dr. Abhinav Talekar</h2>
+                    <h4>Dedicated to Pediatric Dentistry</h4>
+                    <p>Dr Abhianv Talekar completed his masters in Pediatric dentistry from MARDC Pune India. 
+Besides practicing as private practitioner; he is also working as a Professor and Postgraduate Guide in M A Rangoonawala Dental College and Dental Research Institute, India. <br> 
+<p>His research done to evaluate clinical success of various crowns in primary molar is very well recognised . </p>
+<p>He has worked on dental status of child undergoing chemotherapy at various cancer hospitals in Pune </p>
+
+<p>He is one of the youngest international speaker represented in India at various international platforms such as International Association of Pediatric Dentistry,  </p>
+
+<p>European Academy of Pediatric Dentistry, 
+
+<p>American Association of Paediatric Dentistry </p>
+
+<p>He has been invited  as a speaker in USA, Mexico, Egypt, Phillippine,Switzerlad , Russia and last month as visiting faculty to Kazakistan.</p><p>
+ He has various indexed publications and registered clinical trials on his name.
+</p><p>   Recently he got research collaboration with University of Bern Switzerland to assess masticatory efficacy in children.</p>
+
+<p>I Wel come dr abhinav talekar on behalf of IDA Pune branch</p>
+                </div>
+                <!-- Right Section -->
+                <div class="col-md-6 about-us-image text-center">
+                    <img src="./img/founder .jpg" alt="Dr. John Doe">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Banner Start -->
     <!-- <div class="container-fluid banner mb-5">
@@ -269,7 +331,7 @@
         <div class="row" id="facilityGrid">
             <div class="col-md-4 mb-4">
                 <div class="facility" data-index="1">
-                    <img src="https://via.placeholder.com/100" alt="Facility 1">
+                    <img src="img/facilities/Infant.jpg" alt="Facility 1">
                     <div class="facility-title">Infant & Toddler</div>
                 </div>
             </div>
@@ -638,6 +700,34 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+    </script>
 </body>
 
 </html>

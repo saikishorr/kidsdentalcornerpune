@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Facility data
     const facilityData = {
-        1: { title: "Infant & Toddler", text: "Gentle care for infants and toddlers.", image: "https://via.placeholder.com/600" },
+        1: { title: "Infant & Toddler", text: "- The inaugural dental visit is recommended as soon as the first tooth erupts.- Our focus is on preventive care, providing guidance to parents regarding feeding practices, dietary choices, and oral hygiene measures. - We also address feeding challenges, including conditions such as tongue tie and lip tie", image: "http://localhost/kidsdentalcornerpune/img/facilities/Infant.jpg" },
         2: { title: "Anxiety-Free Treatment", text: "Stress-free dental care.", image: "https://via.placeholder.com/600" },
         3: { title: "Preventive Dentistry", text: "Protect your oral health.", image: "https://via.placeholder.com/600" },
         4: { title: "Orthodontics", text: "Aligned and beautiful smiles.", image: "https://via.placeholder.com/600" },
@@ -165,4 +165,5 @@ document.addEventListener("DOMContentLoaded", function () {
         descriptionSection.style.display = "none";
     });
 });
+
 
